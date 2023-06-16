@@ -4,17 +4,18 @@ using UnityEngine;
 
 [System.Serializable]
 
-// Criar struct para conter todas as variaveis dos Links (conexões)
+// Criar struct para conter todas as variaveis dos Links (conexÃµes)
 public struct Link
 {
-    public enum direction { UNI, BI }   // Enum para definir direção do link
-    public GameObject node1;            // 1° node do link
-    public GameObject node2;            // 2° node do link
-    public direction dir;               // variavel para pegar a direção link
+    public enum direction { UNI, BI }   // Enum para definir direÃ§Ã£o do link
+    public GameObject node1;            // 1Â° node do link
+    public GameObject node2;            // 2Â° node do link
+    public direction dir;               // variavel para pegar a direÃ§Ã£o link
 }
 
 public class WPManager : MonoBehaviour
 {
+//criacao de arayw para os waypoints e os links
     public GameObject[] waypoints;
     public Link[] links;
     public Graph graph = new Graph();
@@ -22,6 +23,7 @@ public class WPManager : MonoBehaviour
     private void Start()
     {
 
+//verifica se existem waypoints
         if (waypoints.Length > 0)
         {
 
