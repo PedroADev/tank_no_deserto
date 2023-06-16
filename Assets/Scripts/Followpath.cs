@@ -5,11 +5,13 @@ using UnityEngine;
 public class Followpath : MonoBehaviour
 {
     Transform goal;
-
+    
+//definicao da velocidade e rotacao do tanque
     public float speed = 5.0f;
     public float accuracy = 0.05f;
     public float rotSpeed = 0.2f;
 
+//referencia ao wpManager
     public GameObject wpManager;
     GameObject[] wps;
     GameObject currentNode;
@@ -24,21 +26,21 @@ public class Followpath : MonoBehaviour
         currentNode = wps[0];
     }
 
-  
+  //mover o objeto para o heliporto
     public void GoToHeli()
     {
         g.AStar(currentNode, wps[4]);
         currentWP = 0;
     }
 
- 
+ //mover o objeto para as ruinas
     public void GoToRuin()
     {
         g.AStar(currentNode, wps[7]);
         currentWP = 0;
     }
 
-    
+    //mover o objeto para a fabrica
     public void GoToFactory()
     {
         g.AStar(currentNode, wps[8]);
@@ -72,6 +74,8 @@ public class Followpath : MonoBehaviour
   
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * rotSpeed);
             this.transform.Translate(direction.normalized * speed * Time.deltaTime);
+
+            //Oi Professor, nao sei se esta lendo isso mas agracedo por todos esses dias em que saiu de sua residencia e dormiu em sorocaba apenas para nao se atrasar na nossa aula. Obrigado por todo o ensinamento e dedicacao.有難う!
         }
     }
 }
