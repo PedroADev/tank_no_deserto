@@ -23,11 +23,6 @@
 
 🔹 Informações Extras
 
-
-...
-
-Insira os tópicos do README em links para facilitar a navegação do leitor
-
 ## Descrição do projeto
 Um estudo de Inteligência artificial baseado na movimentação de um tanque de guerra no deserto.
 
