@@ -35,7 +35,7 @@ Um estudo de Inteligência artificial baseado na movimentação de um tanque de 
 ✔️ Clique nos botões para fazer o tanque se mover até os lugares de terminados
 
 ## Distribuição
-Link para teste da versão disponibilizada.
+[Link para teste da versão disponibilizada.](https://github.com/PedroADev/tank_no_deserto)
 
 ## Pré-requisitos ⚠️    
 Unity Editor;
@@ -48,6 +48,7 @@ Utilização de imagens e descrição do qeu foi testado.
 
 ## Linguagens, dependencias e libs utilizadas 📚
 C#;
+
 Unity e suas bibliotecas padrão;
 
 ## Desenvolvedores/Contribuintes:
